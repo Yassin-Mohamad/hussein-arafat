@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حسين عرفات | المؤرخ الحديث</title>
+  <meta name="description" content="الأستاذ حسين عرفات - المؤرخ الحديث | مدرس التاريخ للمرحلة الإعدادية والثانوية. شرح مبسط، مراجعات، أسئلة وتدريب." />
+  <style>
+    :root{
+      --navy:#0c1c2d;
+      --navy2:#132a40;
+      --gold:#b78a45;
+      --gold2:#d3ad6a;
+      --cream:#f7f3eb;
+      --white:#fff;
+      --text:#1c2833;
+      --muted:#66727d;
+      --line:#e6dfd3;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:cairo;background:var(--cream);color:var(--text);line-height:1.8;direction:rtl}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(12,28,45,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(211,173,106,.25)}
+    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{font-weight:800;font-size:20px}.brand span{color:var(--gold2)}
+    .nav-links{display:flex;gap:24px;font-size:14px;color:#e7edf2}
+    .nav-links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:13px 23px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}
+    .btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:#9f7538;transform:translateY(-2px)}
+    .btn-outline{border-color:rgba(255,255,255,.35);color:#fff}.btn-outline:hover{border-color:var(--gold2);color:var(--gold2)}
+    .hero{background:
+      radial-gradient(circle at 15% 20%,rgba(183,138,69,.16),transparent 30%),
+      linear-gradient(135deg,var(--navy),#07111d);
+      color:#fff;padding:100px 0 90px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--gold2);font-weight:700;letter-spacing:.5px;margin-bottom:15px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.15;margin-bottom:18px}
+    h1 span{color:var(--gold2)}
+    .hero h2{font-size:23px;font-weight:500;color:#e6edf3;margin-bottom:22px}
+    .hero p{color:#c8d1d9;max-width:650px;margin-bottom:30px;font-size:18px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .mark{width:min(380px,90%);aspect-ratio:1;margin:auto;border:1px solid rgba(211,173,106,.45);border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(183,138,69,.12),transparent 65%)}
+    .mark::before{content:"H";font-family:Georgia,serif;font-size:210px;font-weight:700;color:#f3eee5;line-height:1}
+    .mark::after{content:"";position:absolute;width:72%;height:5px;background:var(--gold2);transform:rotate(-24deg);border-radius:99px}
+    .mark small{position:absolute;bottom:48px;color:#fff;letter-spacing:3px;font-size:13px}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+    .section-head .kicker{color:var(--gold);font-weight:800;font-size:14px}
+    .section-head h2{font-size:36px;color:var(--navy);margin:7px 0}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);padding:28px 22px;border-radius:16px;box-shadow:0 10px 30px rgba(22,30,38,.05)}
+    .icon{width:46px;height:46px;border-radius:12px;background:var(--navy);color:var(--gold2);display:grid;place-items:center;font-size:20px;margin-bottom:16px}
+    .card h3{color:var(--navy);font-size:18px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+    .about{background:#fff}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+    .quote{background:var(--navy);color:#fff;border-radius:22px;padding:40px;position:relative;overflow:hidden}
+    .quote:before{content:"“";position:absolute;left:25px;top:-35px;font:160px Georgia;color:rgba(211,173,106,.18)}
+    .quote h3{font-size:28px;color:var(--gold2);margin-bottom:12px}.quote p{font-size:19px;position:relative}
+    .about h2{font-size:35px;color:var(--navy);margin-bottom:15px}.about p{color:var(--muted);margin-bottom:14px}
+    .levels{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.level{border:1px solid var(--line);background:var(--cream);padding:8px 15px;border-radius:30px;font-size:14px;font-weight:700}
+    .cta{background:var(--navy);color:#fff;text-align:center}.cta h2{font-size:40px;margin-bottom:10px}.cta p{color:#cbd4dc;margin-bottom:25px}
+    form{background:#fff;padding:30px;border-radius:18px;border:1px solid var(--line);max-width:760px;margin:auto;text-align:right}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+    label{font-size:14px;font-weight:700;color:var(--navy)}input,select,textarea{border:1px solid #d8dce0;border-radius:9px;padding:12px;font:inherit;outline:none;background:#fff}input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+    textarea{min-height:100px;resize:vertical}
+    .form-note{font-size:12px;color:var(--muted);margin-top:10px}
+    footer{background:#07111d;color:#aeb8c1;padding:28px 0;text-align:center;font-size:13px}
+    footer strong{color:#fff}
+    @media(max-width:850px){
+      .nav-links{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.mark{width:280px}.cards{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:560px){
+      .contact-grid{grid-template-columns:1fr !important}
+      section{padding:60px 0}.cards{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.cta h2{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span data-ar="حسين عرفات | المؤرخ الحديث" data-en="Hussein Arafat | The Modern Historian">حسين عرفات | المؤرخ الحديث</span></a>
+      <div class="nav-links">
+        <a href="#about" data-ar="عن المستر" data-en="About">عن المستر</a>
+        <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+        <a href="#booking" data-ar="التواصل" data-en="Contact">التواصل</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <button id="langToggle" class="btn btn-outline" style="padding:8px 13px;font-size:12px" onclick="toggleLanguage()">EN</button>
+        <a class="btn btn-gold" href="#booking" data-ar="احجز مكانك" data-en="Contact Us">احجز مكانك</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow" data-ar="حسين عرفات · المؤرخ الحديث" data-en="HUSSEIN ARAFAT · THE MODERN HISTORIAN">حسين عرفات · المؤرخ الحديث</div>
+        <h1><span data-ar="التاريخ مش مجرد<br><span>تواريخ تحفظها.</span>" data-en="History is not just<br><span>dates to memorize.</span>">التاريخ مش مجرد<br><span>تواريخ تحفظها.</span></span></h1>
+        <h2><span data-ar="التاريخ حكايات تفهمها." data-en="History is a story to understand.">التاريخ حكايات تفهمها.</span></h2>
+        <p><span data-ar="شرح التاريخ للمرحلة الإعدادية والثانوية بأسلوب مبسط، منظم، ويركز على فهم الأحداث وربط الأسباب بالنتائج، مع المراجعة والتدريب على الأسئلة." data-en="History lessons for preparatory and secondary students, explained clearly with a focus on understanding events, connecting causes and effects, reviewing, and practicing questions.">شرح التاريخ للمرحلة الإعدادية والثانوية بأسلوب مبسط، منظم، ويركز على فهم الأحداث وربط الأسباب بالنتائج، مع المراجعة والتدريب على الأسئلة.</span></p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#booking" data-ar="احجز مكانك الآن" data-en="Book Your Place Now">احجز مكانك الآن</a>
+          <a class="btn btn-outline" href="#about"><span data-ar="اعرف أكتر عن المستر" data-en="Learn More About the Teacher">اعرف أكتر عن المستر</span></a>
+        </div>
+      </div>
+      <div class="mark" aria-label="Hussein Arafat logo"><small>THE MODERN HISTORIAN</small></div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker" data-ar="لماذا حسين عرفات؟" data-en="WHY HUSSEIN ARAFAT?">لماذا حسين عرفات؟</div>
+        <h2><span data-ar="نتعلم التاريخ بفهم" data-en="Learn History Through Understanding">نتعلم التاريخ بفهم</span></h2>
+        <p><span data-ar="طريقة شرح تهدف إلى تحويل الدرس من معلومات منفصلة إلى أحداث مترابطة يفهمها الطالب ويتذكرها." data-en="A teaching approach that turns separate facts into connected events students can understand and remember.">طريقة شرح تهدف إلى تحويل الدرس من معلومات منفصلة إلى أحداث مترابطة يفهمها الطالب ويتذكرها.</span></p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">01</div><h3 data-ar="شرح مبسط" data-en="Simple Explanation">شرح مبسط</h3><p data-ar="تبسيط الدروس والمعلومات التاريخية بطريقة واضحة ومناسبة للمرحلة الدراسية." data-en="Clear and accessible explanations of historical lessons and information, tailored to the student’s level.">تبسيط الدروس والمعلومات التاريخية بطريقة واضحة ومناسبة للمرحلة الدراسية.</p></article>
+        <article class="card"><div class="icon">02</div><h3 data-ar="فهم الأحداث" data-en="Understanding Events">فهم الأحداث</h3><p data-ar="معرفة ماذا حدث ولماذا حدث، وربط الأسباب بالنتائج بدلًا من الحفظ فقط." data-en="Understand what happened and why, connecting causes and effects instead of relying on memorization alone.">معرفة ماذا حدث ولماذا حدث، وربط الأسباب بالنتائج بدلًا من الحفظ فقط.</p></article>
+        <article class="card"><div class="icon">03</div><h3 data-ar="تدريب وأسئلة" data-en="Practice & Questions">تدريب وأسئلة</h3><p data-ar="التدريب على الأسئلة ومراجعة أهم النقاط التي يحتاج الطالب إلى التركيز عليها." data-en="Practice questions and review the key points students need to focus on.">التدريب على الأسئلة ومراجعة أهم النقاط التي يحتاج الطالب إلى التركيز عليها.</p></article>
+        <article class="card"><div class="icon">04</div><h3 data-ar="مراجعة منظمة" data-en="Organized Review">مراجعة منظمة</h3><p data-ar="مراجعات تساعد الطالب على ترتيب المعلومات والاستعداد للاختبارات بشكل أفضل." data-en="Structured reviews that help students organize information and prepare more effectively for exams.">مراجعات تساعد الطالب على ترتيب المعلومات والاستعداد للاختبارات بشكل أفضل.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="quote">
+        <h3 data-ar="المؤرخ الحديث" data-en="The Modern Historian">المؤرخ الحديث</h3>
+        <p><span data-ar="“التاريخ مش مجرد تواريخ تحفظها... التاريخ حكايات تفهمها.”" data-en="“History is not just dates to memorize... history is a story to understand.”">“التاريخ مش مجرد تواريخ تحفظها... التاريخ حكايات تفهمها.”</span></p>
+      </div>
+      <div>
+        <div class="kicker" style="color:var(--gold);font-weight:800" data-ar="عن المدرس" data-en="ABOUT THE TEACHER">عن المدرس</div>
+        <h2 data-ar="حسين عرفات" data-en="Hussein Arafat">حسين عرفات</h2>
+        <p data-ar="مدرس التاريخ للمرحلة الإعدادية والثانوية، ويقدم محتوى تعليميًا يركز على الفهم والتحليل وربط الأحداث والشخصيات والأسباب والنتائج." data-en="A history teacher for preparatory and secondary students, providing educational content focused on understanding, analysis, and connecting events, people, causes, and effects.">مدرس التاريخ للمرحلة الإعدادية والثانوية، ويقدم محتوى تعليميًا يركز على الفهم والتحليل وربط الأحداث والشخصيات والأسباب والنتائج.</p>
+        <p data-ar="الهدف أن يخرج الطالب من الدرس وهو فاهم الصورة كاملة، وليس حافظ مجموعة من التواريخ فقط." data-en="The goal is for students to leave each lesson understanding the full picture, not simply memorizing a list of dates.">الهدف أن يخرج الطالب من الدرس وهو فاهم الصورة كاملة، وليس حافظ مجموعة من التواريخ فقط.</p>
+        <div class="levels">
+          <span class="level" data-ar="المرحلة الإعدادية" data-en="Preparatory Stage">المرحلة الإعدادية</span>
+          <span class="level" data-ar="المرحلة الثانوية" data-en="Secondary Stage">المرحلة الثانوية</span>
+          <span class="level" data-ar="شرح ومراجعات" data-en="Lessons & Reviews">شرح ومراجعات</span>
+          <span class="level" data-ar="أسئلة وتدريب" data-en="Questions & Practice">أسئلة وتدريب</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="booking">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:30px">
+        <div class="kicker" data-ar="تواصل مع حسين عرفات" data-en="CONTACT HUSSEIN ARAFAT">تواصل مع حسين عرفات</div>
+        <h2 style="color:#fff" data-ar="للحجز والاستفسار" data-en="Booking & Inquiries">للحجز والاستفسار</h2>
+        <p><span data-ar="للاستفسار عن الدروس ومواعيد الحضور والحجز، تواصل مباشرة مع الأستاذ حسين عرفات." data-en="For lessons, schedules, and booking inquiries, contact Hussein Arafat directly.">للاستفسار عن الدروس ومواعيد الحضور والحجز، تواصل مباشرة مع الأستاذ حسين عرفات.</span></p>
+      </div>
+      <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px;margin:auto">
+        <a href="tel:+201118488233" class="card" style="text-align:center">
+          <div class="icon" style="margin:0 auto 16px">☎</div>
+          <h3 data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</h3>
+          <p style="font-size:18px;color:var(--navy);font-weight:700;direction:ltr">+20 11 18488233</p>
+          <span class="btn btn-gold" style="margin-top:15px" data-ar="اتصل الآن" data-en="Call Now">اتصل الآن</span>
+        </a>
+        <a href="mailto:almowarekmodern@gmail.com" class="card" style="text-align:center">
+          <div class="icon" style="margin:0 auto 16px">✉</div>
+          <h3 data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</h3>
+          <p style="font-size:16px;color:var(--navy);font-weight:700;direction:ltr;word-break:break-word">almowarekmodern@gmail.com</p>
+          <span class="btn btn-gold" style="margin-top:15px" data-ar="إرسال رسالة" data-en="Send Message">إرسال رسالة</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <strong data-ar="حسين عرفات | المؤرخ الحديث" data-en="Hussein Arafat | The Modern Historian">حسين عرفات | المؤرخ الحديث</strong><br>
+      <span data-ar="مدرس التاريخ للمرحلة الإعدادية والثانوية" data-en="History Teacher | Preparatory & Secondary">مدرس التاريخ للمرحلة الإعدادية والثانوية</span>
+      <div style="display:flex;justify-content:center;gap:12px;margin:18px 0">
+        <a href="https://www.facebook.com/HusseinArafat.History" target="_blank" rel="noopener" aria-label="Facebook"
+           style="width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff">f</a>
+        <a href="https://www.youtube.com/@Almowarek-Modern" target="_blank" rel="noopener" aria-label="YouTube"
+           style="width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff">▶</a>
+      </div>
+      <small>© 2026 <span data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">جميع الحقوق محفوظة</span></small>
+    </div>
+  </footer>
+
+
+
+  <script>
+    let currentLang = 'ar';
+
+    const pageContent = {
+      ar: {
+        title: 'حسين عرفات | المؤرخ الحديث',
+        description: 'الأستاذ حسين عرفات - المؤرخ الحديث | مدرس التاريخ للمرحلة الإعدادية والثانوية. شرح مبسط، مراجعات، أسئلة وتدريب.'
+      },
+      en: {
+        title: 'Hussein Arafat | The Modern Historian',
+        description: 'Hussein Arafat | The Modern Historian. History teacher for preparatory and secondary students, offering clear lessons, reviews, questions, and practice.'
+      }
+    };
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      const isArabic = currentLang === 'ar';
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+      document.body.style.direction = isArabic ? 'rtl' : 'ltr';
+      document.title = pageContent[currentLang].title;
+      document.querySelector('meta[name="description"]').setAttribute('content', pageContent[currentLang].description);
+      document.getElementById('langToggle').textContent = isArabic ? 'EN' : 'العربي';
+
+      document.querySelectorAll('[data-ar][data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(isArabic ? 'data-ar' : 'data-en');
+      });
+    }
+
+    function toggleLanguage() {
+      setLanguage(currentLang === 'ar' ? 'en' : 'ar');
+    }
+
+    setLanguage('ar');
+  </script>
+
+</body>
+</html>
